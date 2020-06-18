@@ -1,0 +1,11 @@
+/* CSS Comment Example */
+
+* {margin: 0; padding: 0;}  /* wildcard selector */
+
+p {line-height: 200%;}     /* element selector */
+
+#intro {color: red;}    /* id selector */
+
+.marked {color: blue;}  /* class selector */
+
+
