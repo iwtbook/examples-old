@@ -1,6 +1,3 @@
-# examples
-Examples from IWT Book site
-
 # Introduction to Web Technologies
 
 ## with Thomas Powell
