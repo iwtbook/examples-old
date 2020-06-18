@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- It is good practice to set the language of your document -->
+<html lang="en">
+
+<head>
+  <!-- Setting your character set with a meta element is recommended so all of the characters in your page display properly across devices -->
+  <meta charset="UTF-8">
+
+  <!-- This sets the page width to be the width of the screen-width, and resets the inital zoom level of the browser for this page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- All links will open in a new page -->
+  <base target="_blank">
+
+  <!-- The title is a mandatory element, this displays on the browser tab -->
+  <title>Kitchen Sink Demo</title>
+
+  <!-- Links a CSS styelsheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Adding your own CSS to the mix -->
+  <style>
+    h1 {
+      color: green;
+    }
+  </style>
+
+  <!-- Links a JS file, defers the loading until DOM content finishes being parsed -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Kitchen Sink Demo</h1>
+    <p>A small demo of HTML elements</p>
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>This is an Article about Something Important</h2>
+      </header>
+      <section id="article1">
+        <header>
+          <h3>How that thing will affect you</h3>
+        </header>
+        <p>This is how a sample article text would look in HTML.</p>
+      </section>
+      <section id="article2">
+        <header>
+          <h3>What you should do about this</h3>
+        </header>
+        <p>This is how a sample article text would look in HTML.</p>
+        <aside>
+          <p>This is slightly off-topic but I wanted to include it as an aside</p>
+        </aside>
+      </section>
+      <section id="article3">
+        <header>
+          <h3>How you can help others</h3>
+        </header>
+        <p>This is how a sample article text would look in HTML.</p>
+        <ol>
+          <li>The first thing to do to help</li>
+          <li>The second thing to do to help</li>
+          <li>The third thing to do to help</li>
+          <li>The fourth thing to do to help</li>
+        </ol>
+      </section>
+    </article>
+    <hr />
+    <article>
+      <header>
+        <h2>Neat Features of HTML</h2>
+      </header>
+      <section>
+        <header>
+          <h3>You can display text with whitespace included using <code>&lt;pre&gt;</code>
+          </h3>
+        </header>
+        <pre>      it        works
+              just         like
+                              this.
+                                           ....neat huh?
+        </pre>
+      </section>
+      <section>
+        <header>
+          <h3>Large quotes have never been easier with <code>&lt;blockquote&gt;</code>
+          </h3>
+        </header>
+        <blockquote cite="https://www.starwars.com/news/40-memorable-star-wars-quotes">
+          <p>"It’s the ship that made the Kessel run in less than twelve parsecs. I’ve
+            outrun Imperial starships. Not the local bulk cruisers, mind you. I’m talking
+            about the big Corellian ships, now. She’s fast enough for you, old man."</p>
+          <cite>--Han Solo</cite>
+        </blockquote>
+        <p>You can also just use inline quotes with <code>&lt;p&gt;</code> like this other
+          Han Solo
+          quote: <q
+            cite="https://www.starwars.com/news/40-memorable-star-wars-quotes">Never tell
+            me the odds!</q></p>
+      </section>
+      <section>
+        <header>
+          <h3>Graphs and Other Fun Oddities</h3>
+        </header>
+        <figure>
+          <figcaption>What I do when I can't hear someone</figcaption>
+          <img
+            alt="Pie Chart: 5% slice captioned 'Tell them I can't hear them', 5% slice captioned 'Move closer so I can hear them', 15% slice captioned 'Repeatedly shout WHAT??', and a 75% slice captioned 'Laugh and hope it was a question'"
+            src="images/cantHear-graph.jpg" lazyload>
+        </figure>
+      </section>
+    </article>
+    <hr />
+    <article>
+      <header>
+        <h2>A Caution Against Using HTML to Style</h2>
+      </header>
+      <section>
+        <header>
+          <h3>Semantic Inline Elements</h3>
+        </header>
+        <p>Although some elements may appear to have some default styling by the
+          browser, HTML should always be used <i>semantically</i>, meaning that they
+          are used based on the purpose they serve instead of their aesthetic look.
+          <strong>It's imperative for you to use CSS for all aesthetic
+            purposes.</strong>
+        </p>
+        <p><b>This is some text that you should look at, but isn't necessarily
+            important.</b> You also <em>need</em> to understand that
+          <code>&lt;em&gt;</code> is used
+          to emphases words or a phrase that are more important than their surroundings.
+        </p>
+      </section>
+      <section>
+        <header>
+          <h3>Some elements are useful when styling</h3>
+        </header>
+        <p>When a piece of content has no specific purpose, or there is no other better
+          semantic HTML element to use, <code>&lt;div&gt;</code> and
+          <code>&lt;span&gt;</code> can be quite useful.
+        </p>
+        <div
+          style="background-color: orange; color: white; font-size: 1.5em; padding: 10px;">
+          ~ ~ ~ ~ ~ <span style="color:black">(:</span> ~ ~ ~ ~ ~ ~ ~ <span
+            style="color:black">:)</span> ~ ~ ~ ~ ~ ~
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>This is the footer</p>
+    <p>Contact:</p>
+    <address>
+      <ul>
+        <li><a href="tel:8585555555">(858) 555-5555</a></li>
+        <li><a href="mailto:example@ucsd.edu">example@ucsd.edu</a></li>
+        <li>9500 Gilman Dr<br />La Jolla, CA<br />92093</li>
+      </ul>
+    </address>
+    <p>Hours:</p>
+    <p><time datetime="08:00">8:00am</time> - <time datetime="21:00">9:00pm</time></p>
+  </footer>
+</body>
+
+</html>
