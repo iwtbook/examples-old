@@ -4,13 +4,16 @@
 
 ### Demos
 
-#### List of Demos
+#### List of Demos - HTML Elements
 
-* [Kitchen Sink Demo](https://github.com/iwtbook/examples/blob/master/demos-kitchen-sink/kitchen-sink.html)
-    * Common Structural, Semantic, and Metadata Elements
-* [Embedded Content Demo](https://github.com/iwtbook/examples/blob/master/demos-kitchen-sink/embedded-content.html)
-    * &lt;picture&gt;, &lt;img&gt;, &lt;video&gt;, &lt;audio&gt;, etc.
-* [Table Demo](https://github.com/iwtbook/examples/blob/master/demos-kitchen-sink/tables.html)
-    * &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, etc.
-* [Form Demo](https://github.com/iwtbook/examples/blob/master/demos-kitchen-sink/forms.html)
-    * &lt;form&gt;, &lt;input&gt;, &lt;button&gt;, etc.
+* [Kitchen Sink Demo](https://github.com/iwtbook/examples/blob/demos-kitchen-sink/HTML-Demos/Elements/index.html)
+    * Demo of most every HTML element. Displays common HTML structure as well as semantic use cases for elements.
+
+#### List of Demos - HTML Attributes
+
+* [Accept Charset](https://github.com/iwtbook/examples/blob/demos-kitchen-sink/HTML-Demos/Attributes/accept-charset.html)
+    * List of character encodings the server accepts
+* [Accept](https://github.com/iwtbook/examples/blob/demos-kitchen-sink/HTML-Demos/Attributes/accept.html)
+    * List of types the server accepts
+* [Accesskey](https://github.com/iwtbook/examples/blob/demos-kitchen-sink/HTML-Demos/ElemAttributesents/accesskey.html)
+    * Allows for keyboard shortcuts
