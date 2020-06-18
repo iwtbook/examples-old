@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="action attribute demo" content="Demo for the action attribute">
+        <title>action Demo</title>
+    </head>
+    <body>
+        <h1><code>action</code></h1>
+
+        <section class="description">
+            The action attribute contains the URI of the program that processes the data sent via the form. In other words, it is where you are
+            sending the form data to be processed. The action is invoked when the form is submitted. 
+        </section>
+
+        For example, the following form's <code>action</code> is set to "http://httpbin.org/post". When the submit button is toggled, the form data will be sent to that endpoint.
+
+        <form action="http://httpbin.org/post" method="POST" accept-charset="UTF-8">
+            <label for="name">Enter your name:</label> <br/>
+            <input type="text" id="name" name="name"> <br/>
+            <input type="submit" value="submit">
+        </form>
+
+    </body>
+</html>
+
+
+
+
