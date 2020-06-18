@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple SSI</title>
+		<style>
+			#header {
+				background-color: red;
+				color: white;
+				border: 2px dashed black;
+			}
+			#content {
+				background-color: white;
+			}
+			#footer {
+				background-color: blue;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Super old school content from <a href="http://bignosebird.com/ssi.shtml">here</a> might be helpful</p>
+
+		<!-- #include file="globalheader.html" -->
+
+		<p id="content">Main content from page here</p>
+
+		<p>
+			Hi user from
+			<!-- #echo var="REMOTE_ADDR" -->
+		</p>
+		<p>
+			Example run at
+			<!-- #echo var="DATE_LOCAL" -->
+		</p>
+
+		<!-- #exec cmd="./loop.pl" -->
+
+		<!-- #if expr="${HTTP_USER_AGENT} = /Chrome/" -->
+		<strong>You are using something that looks like Chrome</strong><br />
+		<!-- #else -->
+		<strong>What kind of browser are you?</strong><br />
+		<!-- #endif -->
+
+		<!-- #include file="globalfooter.html" -->
+	</body>
+</html>
