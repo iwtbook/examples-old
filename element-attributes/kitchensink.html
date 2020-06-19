@@ -8,7 +8,7 @@
     <style>section.example { background:#CCC; border: 2px solid black; }</style>
 </head>
 <body>
-    <h2><code>accept</code></h2>
+    <h2 id="accept"><code>accept</code></h2>
     <section class="description">
         The <code>accept</code> attribute takes as its value a comma-separated list of one or more file types, or unique file type specifiers, describing which file types to allow. 
         The accept property is an attribute of the file &lt;input&gt; type. It was supported on the &lt;form&gt; element, but was removed in favor of file in HTML5.
@@ -22,25 +22,33 @@
         <input type="file" id="imageFile" accept="image/*">
     </section>
 
-    <h2><code>accept-charset</code></h2>
+    <h2 id="accept-charset"><code>accept-charset</code></h2>
     <section class="description">
         This attribute specifies the list of character encodings for input data that is accepted by the server processing this form. The value is a space- and/or comma-delimited list of charset values.
     </section>
     <section class="example">
-
+        <form action="" method="post" accept-charset="UTF-8">
+            <label>
+                <input type="text" name="charsettest" id="charsettest" value="Enter any text">
+            </label>
+        </form>
     </section>
 
-    <h2><code>action</code></h2>
+    <h2 id="action"><code>action</code></h2>
     <section class="description">
-
+        The <code>action</code> attribute defines the URI of a program that processes the information submitted via the form.
     </section>
     <section class="example">
-
+        <form action="" method="post" accept-charset="UTF-8">
+            <label>
+                <input type="text" name="actiontest" id="actiontest" value="Enter any text">
+            </label>
+        </form>
     </section>
 
     <h2><code>align</code></h2>
     <section class="description">
-
+        Specifies the horizontal alignment of the element.
     </section>
     <section class="example">
 
@@ -48,7 +56,7 @@
 
     <h2><code>allow</code></h2>
     <section class="description">
-
+        Specifies a feature-policy for the iframe.
     </section>
     <section class="example">
 
@@ -56,7 +64,7 @@
 
     <h2><code>alt</code></h2>
     <section class="description">
-
+        Alternative text in case an image can't be displayed.
     </section>
     <section class="example">
 
@@ -64,7 +72,7 @@
 
     <h2><code>async</code></h2>
     <section class="description">
-
+        Executes the script asynchronously.
     </section>
     <section class="example">
 
@@ -72,7 +80,7 @@
 
     <h2><code>autocomplete</code></h2>
     <section class="description">
-
+        Indicates whether controls in this form can by default have their values automatically completed by the browser.
     </section>
     <section class="example">
 
@@ -80,7 +88,7 @@
 
     <h2><code>autofocus</code></h2>
     <section class="description">
-
+        The element should be automatically focused after the page loaded.
     </section>
     <section class="example">
 
@@ -88,31 +96,7 @@
 
     <h2><code>autoplay</code></h2>
     <section class="description">
-
-    </section>
-    <section class="example">
-
-    </section>
-
-    <h2><code>background</code></h2>
-    <section class="description">
-
-    </section>
-    <section class="example">
-
-    </section>
-
-    <h2><code>bgcolor</code></h2>
-    <section class="description">
-
-    </section>
-    <section class="example">
-
-    </section>
-
-    <h2><code>border</code></h2>
-    <section class="description">
-
+        The audio or video should play as soon as possible.
     </section>
     <section class="example">
 
@@ -120,7 +104,7 @@
 
     <h2><code>buffered</code></h2>
     <section class="description">
-
+        Contains the time range of already buffered media.
     </section>
     <section class="example">
 
@@ -128,7 +112,8 @@
 
     <h2><code>capture</code></h2>
     <section class="description">
-
+        From the HTML Media Capture
+        Specifies a new file can be captured.
     </section>
     <section class="example">
 
@@ -136,7 +121,7 @@
 
     <h2><code>challenge</code></h2>
     <section class="description">
-
+        A challenge string that is submitted along with the public key.
     </section>
     <section class="example">
 
@@ -144,7 +129,7 @@
 
     <h2><code>charset</code></h2>
     <section class="description">
-
+        Declares the character encoding of the page or script.
     </section>
     <section class="example">
 
@@ -152,7 +137,15 @@
 
     <h2><code>checked</code></h2>
     <section class="description">
+        Indicates whether the element should be checked on page load.
+    </section>
+    <section class="example">
 
+    </section>
+
+    <h2><code>cite</code></h2>
+    <section class="description">
+        Contains a URI which points to the source of the quote or change.
     </section>
     <section class="example">
 
@@ -160,7 +153,7 @@
 
     <h2><code>code</code></h2>
     <section class="description">
-
+        Specifies the URL of the applet's class file to be loaded and executed.
     </section>
     <section class="example">
 
@@ -168,15 +161,7 @@
 
     <h2><code>codebase</code></h2>
     <section class="description">
-
-    </section>
-    <section class="example">
-
-    </section>
-
-    <h2><code>color</code></h2>
-    <section class="description">
-
+        This attribute gives the absolute or relative URL of the directory where applets' .class files referenced by the code attribute are stored.
     </section>
     <section class="example">
 
@@ -184,7 +169,7 @@
 
     <h2><code>cols</code></h2>
     <section class="description">
-
+        Defines the number of columns in a textarea.
     </section>
     <section class="example">
 
@@ -192,7 +177,7 @@
 
     <h2><code>colspan</code></h2>
     <section class="description">
-
+        The colspan attribute defines the number of columns a cell should span.
     </section>
     <section class="example">
 
@@ -200,11 +185,731 @@
 
     <h2><code>content</code></h2>
     <section class="description">
-
+        A value associated with http-equiv or name depending on the context.
     </section>
     <section class="example">
 
     </section>
+
+    <h2><code>controls</code></h2>
+    <section class="description">
+        Indicates whether the browser should show playback controls to the user.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>coords</code></h2>
+    <section class="description">
+        A set of values specifying the coordinates of the hot-spot region.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>crossorigin</code></h2>
+    <section class="description">
+        How the element handles cross-origin requests
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>csp</code></h2>
+    <section class="description">
+        Specifies the Content Security Policy that an embedded document must agree to enforce upon itself.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>data</code></h2>
+    <section class="description">
+        Specifies the URL of the resource.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>datetime</code></h2>
+    <section class="description">
+        Indicates the date and time associated with the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>decoding</code></h2>
+    <section class="description">
+        Indicates the preferred method to decode the image.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>default</code></h2>
+    <section class="description">
+        Indicates that the track should be enabled unless the user's preferences indicate something different.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>defer</code></h2>
+    <section class="description">
+        Indicates that the script should be executed after the page has been parsed.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>dirname</code></h2>
+    <section class="description">
+        The dirname attribute on a form control element enables the submission of the directionality of the element
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>disabled</code></h2>
+    <section class="description">
+        Indicates whether the user can interact with the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>download</code></h2>
+    <section class="description">
+        Indicates that the hyperlink is to be used for downloading a resource.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>enctype</code></h2>
+    <section class="description">
+        Defines the content type of the form data when the method is POST.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>enterkeyhint</code></h2>
+    <section class="description">
+        The enterkeyhint specifies what action label (or icon) to present for the enter key on virtual keyboards. 
+        The attribute can be used with form controls (such as the value of textarea elements), or in elements in an editing host (e.g., using contenteditable attribute).
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>for</code></h2>
+    <section class="description">
+        Describes elements which belong to this one.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>form</code></h2>
+    <section class="description">
+        Indicates the form that is the owner of the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>formaction</code></h2>
+    <section class="description">
+        Indicates the action of the element, overriding the action defined in the &lt;form&gt;.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>formenctype</code></h2>
+    <section class="description">
+        If the button/input is a submit button, this attribute sets the encoding type to use during form submission. 
+        If this attribute is specified, it overrides the enctype attribute of the button's form owner.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>formmethod</code></h2>
+    <section class="description">
+        If the button/input is a submit button, this attribute sets the submission method to use during form submission 
+        (GET, POST, etc.). If this attribute is specified, it overrides the method attribute of the button's form owner.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>formnovalidate</code></h2>
+    <section class="description">
+        If the button/input is a submit button, this boolean attribute specifies that the form is
+        not to be validated when it is submitted. If this attribute is specified, it overrides the novalidate attribute of the button's form owner.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>formtarget</code></h2>
+    <section class="description">
+        If the button/input is a submit button, this attribute specifies the browsing context (for example, tab, window, or inline frame) 
+        in which to display the response that is received after submitting the form. If this attribute is specified, it overrides the target attribute of the button's form owner.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>headers</code></h2>
+    <section class="description">
+        IDs of the <th> elements which applies to this element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>height</code></h2>
+    <section class="description">
+        Specifies the height of elements listed here. For all other elements, use the CSS height property.
+        In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>high</code></h2>
+    <section class="description">
+        Indicates the lower bound of the upper range.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>href</code></h2>
+    <section class="description">
+        The URL of a linked resource.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>hreflang</code></h2>
+    <section class="description">
+        Specifies the language of the linked resource.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>http-equiv</code></h2>
+    <section class="description">
+        Defines a pragma directive.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>icon</code></h2>
+    <section class="description">
+        Specifies a picture which represents the command.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>importance</code></h2>
+    <section class="description">
+        Indicates the relative fetch priority for the resource.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>integrity</code></h2>
+    <section class="description">
+        Specifies a Subresource Integrity value that allows browsers to verify what they fetch.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>intrinsicsize</code></h2>
+    <section class="description">
+        This attribute tells the browser to ignore the actual intrinsic size of the image and pretend it’s the size specified in the attribute.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>inputmode</code></h2>
+    <section class="description">
+        Provides a hint as to the type of data that might be entered by the user while editing the element or its contents. 
+        The attribute can be used with form controls (such as the value of textarea elements), or in elements in an editing host (e.g., using contenteditable attribute).
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>ismap</code></h2>
+    <section class="description">
+        Indicates that the image is part of a server-side image map.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>keytype</code></h2>
+    <section class="description">
+        Specifies the type of key generated.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>kind</code></h2>
+    <section class="description">
+        Specifies the kind of text track.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>label</code></h2>
+    <section class="description">
+        Specifies a user-readable title of the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>language</code></h2>
+    <section class="description">
+        Defines the script language used in the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>loading</code></h2>
+    <section class="description">
+        Indicates if the element should be loaded lazily (loading="lazy") or loaded immediately (loading="eager").
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>list</code></h2>
+    <section class="description">
+        Identifies a list of pre-defined options to suggest to the user.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>loop</code></h2>
+    <section class="description">
+        Indicates whether the media should start playing from the start when it's finished.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>low</code></h2>
+    <section class="description">
+        Indicates the upper bound of the lower range.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>manifest</code></h2>
+    <section class="description">
+        Specifies the URL of the document's cache manifest.
+        This attribute is obsolete, use <link rel="manifest"> instead.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>max</code></h2>
+    <section class="description">
+        Indicates the maximum value allowed.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>maxlength</code></h2>
+    <section class="description">
+        Defines the maximum number of characters allowed in the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>minlength</code></h2>
+    <section class="description">
+        Defines the minimum number of characters allowed in the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>media</code></h2>
+    <section class="description">
+        Specifies a hint of the media for which the linked resource was designed.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>method</code></h2>
+    <section class="description">
+        Defines which HTTP method to use when submitting the form. Can be GET (default) or POST.
+    </section>
+    <section class="example">
+
+    </section>
+
+
+    <h2><code>min</code></h2>
+    <section class="description">
+        Indicates the minimum value allowed.
+    </section>
+    <section class="example">
+
+    </section>
+
+    
+    <h2><code>multiple</code></h2>
+    <section class="description">
+        Indicates whether multiple values can be entered in an input of the type email or file.
+    </section>
+    <section class="example">
+
+    </section>
+
+
+    <h2><code>muted</code></h2>
+    <section class="description">
+        Indicates whether the audio will be initially silenced on page load.
+    </section>
+    <section class="example">
+
+    </section>
+
+    
+    <h2><code>name</code></h2>
+    <section class="description">
+        Name of the element. For example used by the server to identify the fields in form submits.
+    </section>
+    <section class="example">
+
+    </section>
+
+
+    <h2><code>novalidate</code></h2>
+    <section class="description">
+        This attribute indicates that the form shouldn't be validated when submitted.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>open</code></h2>
+    <section class="description">
+        Indicates whether the details will be shown on page load.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>optimum</code></h2>
+    <section class="description">
+        Indicates the optimal numeric value.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>pattern</code></h2>
+    <section class="description">
+        Defines a regular expression which the element's value will be validated against.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>ping</code></h2>
+    <section class="description">
+        The ping attribute specifies a space-separated list of URLs to be notified if a user follows the hyperlink.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>placeholder</code></h2>
+    <section class="description">
+        Provides a hint to the user of what can be entered in the field.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>poster</code></h2>
+    <section class="description">
+        A URL indicating a poster frame to show until the user plays or seeks.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>preload</code></h2>
+    <section class="description">
+        Indicates whether the whole resource, parts of it or nothing should be preloaded.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>radiogroup</code></h2>
+    <section class="description">
+        Gives the name of the group of commands that will be toggled when the command itself is toggled, for commands whose type attribute has the value "radio".
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>readonly</code></h2>
+    <section class="description">
+        Indicates whether the element can be edited.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>referrerpolicy</code></h2>
+    <section class="description">
+        Specifies which referrer is sent when fetching the resource.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>rel</code></h2>
+    <section class="description">
+        Specifies the relationship of the target object to the link object.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>required</code></h2>
+    <section class="description">
+        Indicates whether this element is required to fill out or not.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>reversed</code></h2>
+    <section class="description">
+        Indicates whether the list should be displayed in a descending order instead of a ascending.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>rows</code></h2>
+    <section class="description">
+        Defines the number of rows in a text area.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>rowspan</code></h2>
+    <section class="description">
+        Defines the number of rows a table cell should span over.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>sandbox</code></h2>
+    <section class="description">
+        Stops a document loaded in an iframe from using certain features (such as submitting forms or opening new windows).
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>scope</code></h2>
+    <section class="description">
+        Defines the cells that the header test (defined in the th element) relates to.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>scoped</code></h2>
+    <section class="description">
+        This attribute specifies that the styles only apply to the style element’s parent element, and that element’s child nodes.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>selected</code></h2>
+    <section class="description">
+        Defines the default value that will be selected on page load.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>shape</code></h2>
+    <section class="description">
+        The shape attribute is an enumerated attribute. It specifies the area of the image map.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>size</code></h2>
+    <section class="description">
+        Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>sizes</code></h2>
+    <section class="description">
+        If the srcset attribute has any image candidate strings using a width descriptor, 
+        the sizes attribute must also be present. The sizes attribute contributes the source size to the source set, if the source element is selected.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>span</code></h2>
+    <section class="description">
+        Specifies how many columns of a given col or colgroup will be affected.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>src</code></h2>
+    <section class="description">
+        The URL of the embeddable content.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>srcdoc</code></h2>
+    <section class="description">
+        Specifies the HTML content of the page to show in the frame.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>srclang</code></h2>
+    <section class="description">
+        Gives the language of the text track
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>srcset</code></h2>
+    <section class="description">
+        One or more responsive image candidates.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>start</code></h2>
+    <section class="description">
+        Defines the first number if other than 1.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>step</code></h2>
+    <section class="description">
+        The step attribute is a number that specifies the granularity that the value must adhere to or the keyword any.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>summary</code></h2>
+    <section class="description">
+        Specifies text which is a summary of the purpose as well as structure of a table.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>target</code></h2>
+    <section class="description">
+        Specifies a window where the associated document will be displayed.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>type</code></h2>
+    <section class="description">
+        Defines the type of the element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>usemap</code></h2>
+    <section class="description">
+        Associate an image map with an element. The image map is defined by a MAP element.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>value</code></h2>
+    <section class="description">
+        Defines a default value which will be displayed in the element on page load.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>width</code></h2>
+    <section class="description">
+        For the elements listed here, this establishes the element's width.
+        For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead.
+    </section>
+    <section class="example">
+
+    </section>
+
+    <h2><code>wrap</code></h2>
+    <section class="description">
+        Indicates whether the text should be wrapped.
+    </section>
+    <section class="example">
+
+    </section>
+
 
 </body>
 </html>
