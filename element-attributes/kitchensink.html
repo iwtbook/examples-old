@@ -27,7 +27,7 @@
         This attribute specifies the list of character encodings for input data that is accepted by the server processing this form. The value is a space- and/or comma-delimited list of charset values.
     </section>
     <section class="example">
-        <form action="" method="post" accept-charset="UTF-8">
+        <form action="http://httpbin.org/post" method="post" accept-charset="UTF-8">
             <label>
                 <input type="text" name="charsettest" id="charsettest" value="Enter any text">
             </label>
@@ -39,7 +39,7 @@
         The <code>action</code> attribute defines the URI of a program that processes the information submitted via the form.
     </section>
     <section class="example">
-        <form action="" method="post" accept-charset="UTF-8">
+        <form action="http://httpbin.org/post" method="post" accept-charset="UTF-8">
             <label>
                 <input type="text" name="actiontest" id="actiontest" value="Enter any text">
             </label>
@@ -51,7 +51,6 @@
         Specifies the horizontal alignment of the element.
     </section>
     <section class="example">
-
     </section>
 
     <h2><code>allow</code></h2>
@@ -874,7 +873,11 @@
         Defines the type of the element.
     </section>
     <section class="example">
-
+        <form action="http://httpbin.org/post" method="post">
+            <input type="text" name="name" id="name" placeholder="input type=text">
+            <input type="email" name="emailaddr" id="emailaddr" placeholder="input type=email">
+            
+        </form>
     </section>
 
     <h2><code>usemap</code></h2>
@@ -890,24 +893,44 @@
         Defines a default value which will be displayed in the element on page load.
     </section>
     <section class="example">
-
+        <form action="http://httpbin.org/post" method="post" accept-charset="UTF-8">
+            <input type="text" name="value" id="value" value="This text is the predetermined value that will be sent in the form" size="75"><br/>
+            <input type="text" name="value" id="value" placeholder="This text is a placeholder and entered text will set the value" size="75">
+        </form>
     </section>
 
-    <h2><code>width</code></h2>
+    <h2 id="width"><code>width</code></h2>
     <section class="description">
         For the elements listed here, this establishes the element's width.
-        For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead.
+        <ul>
+            <li>canvas</li>
+            <li>embed</li>
+            <li>iframe</li>
+            <li>img</li>
+            <li>object</li>
+            <li>input</li>
+            <li>video</li>
+        </ul>
+        For all other instances, such as &lt;div&gt;, this is a legacy attribute, in which case the CSS <code>width</code> property should be used instead.
     </section>
     <section class="example">
-
+        <img src="" alt="">
+        <img src="" alt="">
     </section>
 
-    <h2><code>wrap</code></h2>
+    <h2 id="wrap"><code>wrap</code></h2>
     <section class="description">
-        Indicates whether the text should be wrapped.
+        Indicates whether the text should be wrapped. Possible values are:
+        <ul>
+            <li><em>hard</em>: The browser automatically inserts line breaks (CR+LF) so that each line has no more than the width of the control; the cols attribute must also be specified for this to take effect.</li>
+            <li><em>soft</em>: The browser ensures that all line breaks in the value consist of a CR+LF pair, but does not insert any additional line breaks.</li>
+            <li><em>off</em>: Like soft but changes appearance to white-space: pre so line segments exceeding cols are not wrapped and the &lt;textarea&gt; becomes horizontally scrollable.</li>
+        </ul>
+        If this attribute is not specified, <em>soft</em> is its default value.
     </section>
     <section class="example">
-
+        <textarea wrap="hard" cols="30">This text area has wrap="hard" as well as a max of 30 columns. Note automatic line breaks and a vertical scroll.</textarea><br/>
+        <textarea wrap="off" cols="30">This text area has wrap="off" as well as a max of 30 columns. Note no automatic line breaks and a horizontal scroll.</textarea>
     </section>
 
 
