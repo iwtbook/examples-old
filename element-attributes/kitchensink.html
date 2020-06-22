@@ -838,10 +838,19 @@
 
     <h2><code>start</code></h2>
     <section class="description">
-        Defines the first number if other than 1.
+        Defines the first number for an ordered list if other than 1.
     </section>
     <section class="example">
-
+        <ol>
+            <li>This list starts at 1</li>
+            <li>Lets continue the numbering with a second list</li>
+        </ol>
+        <hr>
+        <ol start="3">
+            <li>This list has a start of 3</li>
+            <li>...</li>
+            <li>...</li>
+        </ol>
     </section>
 
     <h2><code>step</code></h2>
@@ -849,7 +858,10 @@
         The step attribute is a number that specifies the granularity that the value must adhere to or the keyword any.
     </section>
     <section class="example">
-
+        <label for="stepone">This number input has a step of 1</label>
+        <input id="stepone" name="stepone" type="number" step="1" min="1"><br/>
+        <label for="steptwo">This number input has a step of 2</label>
+        <input id="steptwo" name="steptwo" type="number" step="2" min="1">
     </section>
 
     <h2><code>summary</code></h2>
@@ -857,15 +869,22 @@
         Specifies text which is a summary of the purpose as well as structure of a table.
     </section>
     <section class="example">
-
     </section>
 
     <h2><code>target</code></h2>
     <section class="description">
-        Specifies a window where the associated document will be displayed.
+        Specifies a window where the associated document will be displayed, as the name for a browsing context (a tab, window, or &lt;iframe&gt;). The following keywords have special meanings for where to load the URL:
+        <ul>
+            <li>_self: the current browsing context. (Default)</li>
+            <li>_blank: usually a new tab, but users can configure browsers to open a new window instead.</li>
+            <li>_parent: the parent browsing context of the current one. If no parent, behaves as _self.</li>
+            <li>_top: the topmost browsing context (the "highest" context that’s an ancestor of the current one). If no ancestors, behaves as _self.</li>
+        </ul>
+        Note: When using target, add <code>rel="noreferrer noopener"</code> to avoid exploitation of the window.opener API.
     </section>
     <section class="example">
-
+        <a href="http://google.com">This will open Google in the same browser tab.</a><br/>
+        <a href="http://google.com" rel="noreferrer noopener" target="_blank">This will open Google in a new browser tab.</a>
     </section>
 
     <h2><code>type</code></h2>
@@ -874,9 +893,8 @@
     </section>
     <section class="example">
         <form action="http://httpbin.org/post" method="post">
-            <input type="text" name="name" id="name" placeholder="input type=text">
+            <input type="text" name="name" id="name" placeholder="input type=text"><br/>t
             <input type="email" name="emailaddr" id="emailaddr" placeholder="input type=email">
-            
         </form>
     </section>
 
