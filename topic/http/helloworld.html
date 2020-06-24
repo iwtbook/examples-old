@@ -18,16 +18,25 @@
     <!-- End Google Analytics -->
 
     <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <!--
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> link this up--> 
     <!--Add a third party font-->
 </head>
 <body>
-    <h1>Lifecycle of a Request</h1>    
+    <header><h1>Lifecycle of a Request</h1><hr/></header>    
     <!-- local svg; local image; local js (date, time, browser, lang, console log); remote video -->
-    <img src="./cat.jpg" alt="A photo of a gray cat" title="Cats are cool" height="400px"><br/>
-    <output id="stats"></output><br/>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pHFWGN-upGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <script src="./main.js"></script>
+    <div id="stats-wrapper"><output id="stats"></output></div><br/>
+    <div id="grid-container">
+        <section id="desc1">
+            Lifecycle of an HTTP request:
+        </section>
+        <img id="catpic" src="./cat.jpg" alt="A photo of a gray cat" title="Cats are cool" height="400px"><br/>
+        <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/pHFWGN-upGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="desc2">
+            more stuff on requests
+        </section>
+        <script src="./main.js"></script>
+    </div>
 </body>
 </html>
