@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#catpic {
+    float: right;
+    height: 300px;
+    grid-area: pic;
+}
+
+#stats-wrapper {
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #0F0;
+    margin: 10px auto;
+    padding: 10px 10px;
+    width: 50vw;
+}
+
+
+#grid-container { 
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-bottom: 5px solid rgb(196, 196, 196);
+    color: black;
+    display: grid;
+    grid-template-areas: 
+    'desc1 pic'
+    'video desc2';
+    height: auto;
+    justify-items: center;
+    margin: 20px;
+    overflow-y: visible;
+    padding: 40px 0px;
+    row-gap: 40px;
+}
+
+#vid{
+    align-self: center;
+    grid-area: video;
+    padding: 0px 30px;
+}
+
+#desc1{
+    font-size: 1.2rem;
+    grid-area: desc1;
+    text-align: justify;
+}
+
+#desc2{
+    grid-area: desc2;
+}
+
+section {
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+    overflow-y: visible;
+    padding: 20px 20px;
+    width: 30vw;
+}
+
+h2 {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  body {
+    align-items: center;
+    background-color: #e1ebe4;
+    color: white;
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    justify-items: center;  
+    text-align: left;
+  }
+  
+  header {
+    align-self: flex-start;
+    background-color: #040f00;
+    margin-bottom: 15px;
+    padding: 20px 0 23px 0;
+    width: 100%;
+  }
+  
+  header>h1 {
+    color: white;
+    margin-left: 20px;
+  }
+  
+  header>p {
+    color: white;
+    margin: 7px 0 0 20px;
+  }
+  
+  
